@@ -1,0 +1,32 @@
+.copyright {
+  width: 300px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: serif;
+  font-size: 16px;
+
+  &__logo-rs {
+    width: 70px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__year {
+    font-weight: bold;
+  }
+
+  &__student-link {
+    color: $color-white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+}

@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  margin: 20px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $viewport--md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: $viewport--md) {
+    margin-bottom: 0;
+  }
+}

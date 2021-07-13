@@ -1,0 +1,52 @@
+.stat-buttons {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .stat-buttons__repeat,
+  .stat-buttons__reset {
+    margin: 0 40px;
+    padding: 0 20px;
+    border: 2px solid $color-dark-blue;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 7px;
+    background: $color-red;
+    color: $color-white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s ease-in-out;
+
+    @media (max-width: $viewport--md) {
+      font-size: 14px;
+      margin: 0 10px;
+    }
+
+    &:hover {
+      background-color: $color-red-hover;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &--play {
+    .stat-buttons__repeat,
+    .stat-buttons__reset {
+      background-color: $color-green;
+
+      &:hover {
+        background: $color-green-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.game-mode-switch {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+
+  position: relative; width: 110px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+
+  @media (max-width: $viewport--md) {
+    order: 2;
+  }
+}
+.game-mode-switch-checkbox {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.game-mode-switch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid $color-white; border-radius: 40px;
+  position: relative;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.game-mode-switch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.game-mode-switch-inner:before, .game-mode-switch-inner:after {
+  display: block; float: left; width: 50%; height: 40px; padding: 0; line-height: 40px;
+  font-size: 20px; color: $color-white; font-family: Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.game-mode-switch-inner:before {
+  content: "PLAY";
+  padding-left: 10px;
+  color: $color-white;
+  background: $color-blue; 
+  background: $green-to-blue;
+}
+.game-mode-switch-inner:after {
+  content: "TRAIN";
+  padding-right: 8px;
+  color: $color-white;
+  background: $color-orange;
+  background: $carrot-to-orange;
+  text-align: right;
+}
+.game-mode-switch-switch {
+  display: block; width: 30px; height: 30px; margin: 5px;
+  background: $color-white;
+  position: absolute; top: 0; bottom: 0;
+  right: 66px;
+  border: 2px solid $color-white; border-radius: 40px;
+  transition: all 0.3s ease-in 0s; 
+}
+.game-mode-switch-checkbox:checked + .game-mode-switch-label .game-mode-switch-inner {
+  margin-left: 0;
+}
+.game-mode-switch-checkbox:checked + .game-mode-switch-label .game-mode-switch-switch {
+  right: 0px; 
+}

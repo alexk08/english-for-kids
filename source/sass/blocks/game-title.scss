@@ -1,0 +1,19 @@
+.game-title  {
+  color: $color-orange;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  transition: color 0.5s ease-in-out;
+
+  &--play {
+    color: $color-blue;
+  }
+  
+  @media (max-width: $viewport--md) {
+    font-size: 38px;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

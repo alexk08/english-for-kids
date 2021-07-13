@@ -1,0 +1,47 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+//---------------------------------
+
+@import "blocks/header";
+@import "blocks/rotate";
+@import "blocks/cards-container";
+@import "blocks/card";
+@import "blocks/stars";
+@import "blocks/play-button";
+@import "blocks/end-screen";
+@import "blocks/nav";
+@import "blocks/game-mode-switch";
+@import "blocks/game-title";
+@import "blocks/main";
+@import "blocks/stat-buttons";
+@import "blocks/stat-table";
+@import "blocks/table-container";
+@import "blocks/copyright";
+@import "blocks/footer";
+
+
+// используйте это для отключения ховеров на тач устройствах
+// ! но не используйте это для текстовых полей ( input, textarea )
+// также для любых transition обязательно указывайте transition-property
+// transition: color $default-transition-settings, а не transition: $default-transition-settings
+
+/* @media (hover: hover), screen and (min-width: 0\0) {
+  &:hover,
+  &:focus {
+    color: red;
+  }
+} */

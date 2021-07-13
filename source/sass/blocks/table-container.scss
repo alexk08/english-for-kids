@@ -1,0 +1,7 @@
+.table-container {
+  @media (max-width: $viewport--md) {
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+  }
+}

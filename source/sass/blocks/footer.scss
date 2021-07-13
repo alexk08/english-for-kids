@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 100px;
+  background-color: $color-orange;
+
+  &--play {
+    background-color: $color-blue;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

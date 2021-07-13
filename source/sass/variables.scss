@@ -1,0 +1,57 @@
+// Colors
+//---------------------------------
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+
+$color-black:                     #0e0e0e;
+$color-white:                     #f2f2f2;
+$color-orange:                    #eb6864;
+$color-carrot:                    #E6AB45;
+$color-blue:                      #4C74FE;
+$color-blue-hover:                #3157FF;
+$color-dark-blue:                 #383030;
+$color-green:                     #45e6a7;
+$color-green-hover:               #3BC490;
+$color-yellow:                    #D3FC58;
+$color-red:                       #EB372C;
+$color-red-hover:                 #D62525;
+
+// Gradient
+
+$yellow-to-right:                   linear-gradient(90deg, rgba($color-yellow, 0.4) 0%, rgba($color-yellow, 0.1) 75%);
+$carrot-to-orange:                  linear-gradient(45deg, rgba($color-carrot, 1) 0%, rgba($color-orange, 1) 100%);
+$carrot-to-orange-op:               linear-gradient(45deg, rgba($color-carrot,0.3) 0%, rgba($color-orange,0.3) 100%);
+$green-to-blue:                     linear-gradient(45deg, rgba($color-green, 1) 0%, rgba($color-blue, 1) 100%);
+$green-to-blue-op:                  linear-gradient(45deg, rgba($color-green, 0.3) 0%, rgba($color-blue, 0.3) 100%);
+
+// Typography
+//---------------------------------
+
+$font-family--:                     "", "Arial", sans-serif;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Viewports
+//---------------------------------
+
+$viewport--sm:                      320px;
+$viewport--md:                      768px;
+$viewport--lg:                      1024px;
+$viewport--xl:                      1440px;
+$viewport--xxl:                     1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

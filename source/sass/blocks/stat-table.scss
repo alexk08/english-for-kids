@@ -1,0 +1,79 @@
+.stat-table, th, td {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-table {
+  &__row {
+    &--header {
+      font-size: 24px;
+      font-weight: bold;
+
+      th {
+        padding: 5px 20px;
+        border: 1px solid $color-dark-blue;
+        background-color: $color-red;
+        cursor: pointer;
+        text-transform: capitalize;
+
+        &:hover {
+          background-color: $color-red-hover;
+        }
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+
+      @media (max-width: $viewport--lg) {
+        font-size: 16px;
+      }
+    }
+
+    td {
+      padding: 5px 0;
+      border: 1px solid $color-dark-blue;
+      text-align: center;
+      font-size: 20px;
+
+      @media (max-width: $viewport--lg) {
+        font-size: 14px;
+      }
+    }
+
+    &--odd {
+      background: $carrot-to-orange-op;
+    }
+
+    &--even {
+      background-color: $color-yellow;
+    }
+  }
+
+  &--play {
+    .stat-table__row {
+      &--header {
+        th {
+          background-color: $color-blue;
+
+          &:hover {
+            background-color: $color-blue-hover;
+          }
+        }
+      }
+
+      &--odd {
+        background-color: $color-green;
+      }
+
+      &--even {
+        background: $green-to-blue-op;
+      }
+    }
+  }
+
+  @media (max-width: $viewport--md) {
+    flex-shrink: 0;
+  }
+}
